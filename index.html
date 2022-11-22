@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Chatkara</title>
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container-box">
+      <div class="box">
+        <div class="info">
+          <img src="img/logo.png" alt="chatkara" />
+          <h3>chatkara</h3>
+          <p>We have something for everyone!!</p>
+        </div>
+        <div class="form-box">
+          <form   onsubmit="sendEmail(); reset; return false;" class="login-form">
+            <label for="user-id">Username</label>
+            <input
+              type="text"
+              id="user-id"
+              placeholder="Username"
+              required
+            /><br />
+            <label for="user-pass">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            /><br />
+
+            <div  type = "submit" class="button">
+              <a href="/chatkara.html" class="form-btn btn btn-default"
+                >Submit</a
+              >
+              or
+              <a
+                href="/chatkara.html"
+                type="submit"
+                class="skip form-btn btn btn-default"
+                >skip</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "og.chatkara@gmail.com",
+          Password: "7017762765",
+          To: "himanshugola1111@gmail.com",
+          From: document.getElementById('user-id').value,
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>

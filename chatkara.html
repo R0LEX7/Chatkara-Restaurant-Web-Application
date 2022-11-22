@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Chatkara Project</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="font-awesome.css" />
+  </head>
+  <body>
+    <!-- page loader start -->
+    <div class="page-loader">
+      <div class="page-loader-img">
+        <img src="img/logo.png" alt="logo-loader" />
+      </div>
+    </div>
+    <!-- page loader start -->
+
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="logo">
+            <a href="#home"><img src="img/logo.png" alt="logo" /> CHATKARA</a>
+          </div>
+          <div id="navigation" class="nav-toggler">
+            <div id="menu" onclick="my_Menu()">
+              <div class="bar" id="bar1"></div>
+              <div class="bar" id="bar2"></div>
+              <div class="bar" id="bar3"></div>
+            </div>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li class="nav-item"><a href="#home">home</a></li>
+              <li class="nav-item"><a href="#about">about</a></li>
+              <li class="nav-item"><a href="#our-menu">our menu</a></li>
+              <li class="nav-item"><a href="#testimonials">testimonials</a></li>
+              <li class="nav-item"><a href="#team">team</a></li>
+              <li class="nav-item"><a href="#contact">contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- home section start-->
+    <section class="home-section" id="home">
+      <div class="home-bg">
+
+      </div>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Chatkara Restaurant</h1>
+            <p>
+              Chatkara`s creative, food and beverage program combines satisfying
+              staples with imaginative twists. From boozy brunches and happy
+              hours to family dinners, special occasions and everything in
+              between, Chatkara has something for everyone.
+            </p>
+
+            <div class="buttons">
+              <a href="#our-menu" class="btn btn-default">our menu</a>
+              <a href="#our-app" class="btn btn-default">our app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- about section Start -->
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2
+              data-title="our story"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              about us
+            </h2>
+          </div>
+          <div class="about-text" data-aos="fade-right">
+            <h3>welcome to chatkara!</h3>
+            <p>
+              Chatkara -- The OG -- reinvents the neighborhood eatery, combining
+              timeless inspiration from classic Indian with inventive and
+              playful modern flair. With influences ranging from the 1950s diner
+              to the elegant railway dining cars of days past, you'll find a
+              nostalgic collection of comforts, classics and curiosities with a
+              modern twist.
+            </p>
+            <!-- <p>
+              Located within the Hotel Taj, across 20th Street from Taj Mahal,
+              we offer a dining experience for both the young and young at
+              heart, complete with upcoming original affairs like themed
+              brunches; an engaging dinner series with special guests;
+              one-of-a-kind dessert collaborations; and more.
+            </p> -->
+            <p>
+              Our two-toned Terrazzo floor mirrors the North Yamuna River as it
+              winds through Taj, leading you through the restaurant. Come take a
+              bite out of Taj at The Chatkara -- we'll see you soon!
+            </p>
+            <a href="#book-table" class="btn btn-default">book table</a>
+          </div>
+          <div class="about-img" data-aos="fade-left">
+            <div class="img-box">
+              <h3>20+ years of experience</h3>
+              <img src=" img/about-img.jpg" alt="about img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- menu section starts -->
+    <section class="menu-section sec-padding" id="our-menu">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2
+              data-title="order now"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              our menu
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu-tabs" data-aos="fade-up" data-aos-duration="1000">
+            <button
+              type="button"
+              class="menu-tab-item active"
+              data-target="#lunch"
+            >
+              lunch
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#dinner">
+              dinner
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#drink">
+              drink
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#dessert">
+              dessert
+            </button>
+          </div>
+        </div>
+        <!-- lunch items -->
+        <div class="row menu-tab-content active" id="lunch">
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/lunch/dosa.jpg" alt="menu item thumbnail" />
+              <h3>Dosa</h3>
+            </div>
+            <div class="menu-item-price">Rs.150.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-left">
+            <div class="menu-item-title">
+              <img src="img/lunch/idli sambhar.jpg" alt="menu item thumbnail" />
+              <h3>Idli sambhar</h3>
+            </div>
+            <div class="menu-item-price">Rs100.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/lunch/pav bhaji.jpg" alt="menu item thumbnail" />
+              <h3>Pav Bhaji</h3>
+            </div>
+            <div class="menu-item-price">Rs.150.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-left">
+            <div class="menu-item-title">
+              <img src="img/lunch/poha.jpg" alt="menu item thumbnail" />
+              <h3>Amritsari Poha</h3>
+            </div>
+            <div class="menu-item-price">Rs.80.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/lunch/cheela.jpg" alt="menu item thumbnail" />
+              <h3>Cheela</h3>
+            </div>
+            <div class="menu-item-price">Rs.80.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-left">
+            <div class="menu-item-title">
+              <img src="img/lunch/kachodi.jpeg" alt="menu item thumbnail" />
+              <h3>Kachodi</h3>
+            </div>
+            <div class="menu-item-price">$50.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/lunch/dal bati.jpg" alt="menu item thumbnail" />
+              <h3>Dal baati</h3>
+            </div>
+            <div class="menu-item-price">Rs120.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-left">
+            <div class="menu-item-title">
+              <img src="img/lunch/chole bhatoore.jpg" alt="menu item thumbnail" />
+              <h3>Chole Bhature</h3>
+            </div>
+            <div class="menu-item-price">Rs150.00</div>
+          </div>
+        </div>
+
+        <!-- dinner item -->
+        <div class="row menu-tab-content" id="dinner">
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/Dinner/Vegetarian-festive-thali (1).jpg" alt="menu item thumbnail" />
+              <h3>Special Thali</h3>
+            </div>
+            <div class="menu-item-price">Rs.350.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-left">
+            <div class="menu-item-title">
+              <img src="img/Dinner/download.jpg" alt="menu item thumbnail" />
+              <h3>Dal Makhani</h3>
+            </div>
+            <div class="menu-item-price">Rs.150.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/Dinner/images.jpg" alt="menu item thumbnail" />
+              <h3>Shahi Thali</h3>
+            </div>
+            <div class="menu-item-price">Rs.500.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/Dinner/aloo prathe.jpg" alt="menu item thumbnail" />
+              <h3>Aloo Parathe</h3>
+            </div>
+            <div class="menu-item-price">Rs.100.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/Dinner/Punjabi-Aloo-Matar-Recipe.jpg" alt="menu item thumbnail" />
+              <h3>Aloo Matar</h3>
+            </div>
+            <div class="menu-item-price">Rs.150.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/Dinner/araher.jpg" alt="menu item thumbnail" />
+              <h3>Araher Tadka</h3>
+            </div>
+            <div class="menu-item-price">Rs.150.00</div>
+          </div>
+        </div>
+        <!-- drink item -->
+        <div class="row menu-tab-content" id="drink">
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/menu/1.jpg" alt="menu item thumbnail" />
+              <h3>drink item</h3>
+            </div>
+            <div class="menu-item-price">$50.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-left">
+            <div class="menu-item-title">
+              <img src="img/menu/2.jpg" alt="menu item thumbnail" />
+              <h3>drink item</h3>
+            </div>
+            <div class="menu-item-price">$50.00</div>
+          </div>
+        </div>
+        <!-- dessert item -->
+        <div class="row menu-tab-content" id="dessert">
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/menu/1.jpg" alt="menu item thumbnail" />
+              <h3>dessert item</h3>
+            </div>
+            <div class="menu-item-price">$50.00</div>
+          </div>
+          <div class="menu-item" data-aos="fade-right">
+            <div class="menu-item-title">
+              <img src="img/menu/2.jpg" alt="menu item thumbnail" />
+              <h3>dessert item</h3>
+            </div>
+            <div class="menu-item-price">$50.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu section end -->
+
+    <!-- testimonials section start -->
+    <section class="testimonials-section sec-padding" id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-title="testimonials">some feedback</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="testi-item" data-aos="zoom-in">
+            <div class="testi-author">
+              <div class="testi-author-name">
+                <h3>priya sharma</h3>
+                <span>food specialist</span>
+              </div>
+              <div class="test-author-img">
+                <img src="img/testimonials/1.jpg" alt="testi author img" />
+              </div>
+            </div>
+            <p>
+              This place is great! Atmosphere is chill and cool but the staff is
+              also really friendly. They know what they’re doing and what
+              they’re talking about, and you can tell making the customers happy
+              is their main priority. Food is pretty good, some Indian classics
+              and some twists, and for their prices it’s 100% worth it.
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testi-item" data-aos="zoom-in">
+            <div class="testi-author">
+              <div class="testi-author-name">
+                <h3>neha gupta</h3>
+                <span>food specialist</span>
+              </div>
+              <div class="test-author-img">
+                <img src="img/testimonials/2.jpg" alt="testi author img" />
+              </div>
+            </div>
+            <p>
+              First time in Agra and YOU have to go! It’s the cutest little spot
+              with amazing food. The Chatkara is to die for. IT WAS FIRE!! The
+              service we received was so amazing and we will definitely be back
+              again. They made us feel welcomed and gave us an amazing
+              experience.
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testi-item" data-aos="zoom-in">
+            <div class="testi-author">
+              <div class="testi-author-name">
+                <h3>rahul gandhi</h3>
+                <span>food specialist</span>
+              </div>
+              <div class="test-author-img">
+                <img src="img/testimonials/3.jpg" alt="testi author img" />
+              </div>
+            </div>
+            <p>
+              Do yourself a favor and visit this lovely restaurant in City of
+              Taj. The service is unmatched. The staff truly cares about your
+              experience. The food is absolutely amazing – everything we tasted
+              melted in other mouths. Absolutely the best meal we had while in
+              Agra. Highly recommend!
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials section end -->
+
+    <!-- team section start -->
+    <section class="team-section sec-padding" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-title="team" data-aos="fade-up">our chefs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/team/1.jpg" alt="team item" />
+            <div class="team-item-info">
+              <h3>shreya agarwal</h3>
+              <p>head chef</p>
+            </div>
+          </div>
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/team/2.jpg" alt="team item" />
+            <div class="team-item-info">
+              <h3>raj verma</h3>
+              <p>vice chef</p>
+            </div>
+          </div>
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/team/3.jpg" alt="team item" />
+            <div class="team-item-info">
+              <h3>krutika verma</h3>
+              <p>food department</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team section end -->
+
+    <!-- footer section start -->
+    <!-- footer section end -->
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="footer-item" data-aos="fade-up">
+            <h3>our location</h3>
+            <p>
+              Fatehabad Road, Tajganj,<br />
+              New Agra - 282001
+            </p>
+          </div>
+
+          <div class="footer-item" data-aos="fade-up">
+            <h3>opening hours</h3>
+            <p>
+              Monday to Sunday <br />
+              10:00 AM - 12:00 PM
+            </p>
+          </div>
+          <div class="footer-item" data-aos="fade-up">
+            <h3>contact us</h3>
+            <p>+91 70586 88761</p>
+            <p>chatkara@gmail.com</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="copyright">&copy; 2022 - Designed by The Rolex</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="aos.js"></script>
+  </body>
+</html>
